@@ -1,19 +1,18 @@
 import React, { useState } from "react";
-import { getImageUrl } from "../../utils";
+import menuIcon from "../../assets/nav/menuIcon.png";
 import styles from "./Navbar.module.css";
 
 
 export const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
-    console.log("Path being passed:", "nav/menuIcon.png");
-    console.log("Generated URL:", getImageUrl("nav/menuIcon.png"));
-        return (
+
+    return (
     <nav className = {styles.navbar}>
         <a className = {styles.title} href = "/">Warrick Tsui</a>
 
         <div className = {styles.menu}>
             <img className= {styles.menuBtn}
-                src = {getImageUrl("nav/menuIcon.png")}
+                src = {menuIcon}
                 alt = "menu-button"
                 onClick = {() => setMenuOpen(!menuOpen)}
                 />

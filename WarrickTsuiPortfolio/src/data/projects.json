@@ -1,0 +1,33 @@
+[
+    {
+        "title": "Tetris FPGA Verilog Project",
+        "imageSrc": "",
+        "description": "Me and Daunte Figueroa recreated the classic game Tetris on a DE1-SoC Board using Verilog.",
+        "github": "https://github.com/WarrickT/Warrick-Daunte-Tetris" 
+    },
+    {
+        "title": "ReliefGrid - NewHacks Hackathon Project",
+        "imageSrc": "",
+        "description": "For the NewHacks hackathon, my group created a web application that aids natural disaster resource allocation!",
+        "github": "https://devpost.com/software/resource-finder-c5jvoq"
+    },
+    {
+        "title": "Gas Price Checker - Web Scraping Project",
+        "imageSrc": "",
+        "description": "I worked in a team of 3 to create an application that the cheapest gas stations withinin the user's radius!",
+        "github": "https://github.com/WarrickT/Connor-Sharani-Warrick-Gas-Price-Checker" 
+    }, 
+    {
+        "title": "EchoMix - ML Spotify API Project (Upcoming)",
+        "imageSrc": "",
+        "description": "This project will gather the user's playlists and generate similar ones using a cosine similarity and K-Nearest Neighbour algorithm.",
+        "github": "https://github.com/WarrickT/EchoMix"
+    },
+    {
+        "title": "Reversi Project - C",
+        "imageSrc": "",
+        "description": "Implementation of Reversi using minimaxing algorithm",
+        "github": "https://github.com/WarrickT/C-Reversi"
+    }
+
+]

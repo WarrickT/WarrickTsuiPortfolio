@@ -1,0 +1,39 @@
+[
+{
+    "title": "Python",
+    "imageSrc": "../../assets/skills/python.png"
+},
+{
+    "title": "Java",
+    "imageSrc": "../../assets/skills/java.png"
+},
+{
+    "title": "C",
+    "imageSrc": "../../assets/skills/C.png"
+},
+{
+    "title": "Cpp",
+    "imageSrc": "../../assets/skills/cpp.png"
+},
+{
+    "title": "HTML",
+    "imageSrc": "../../assets/skills/html.png"
+},
+{
+    "title": "CSS",
+    "imageSrc": "../../assets/skills/css-3.png"
+},
+{
+    "title": "JS",
+    "imageSrc": "../../assets/skills/js.png"
+},
+{
+    "title": "Github",
+    "imageSrc": "../../assets/skills/github.png"
+},
+{
+    "title": "React",
+    "imageSrc": "../../assets/skills/React.png"
+}
+
+]
