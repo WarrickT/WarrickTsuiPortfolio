@@ -26,7 +26,7 @@ let skills_dictionary = {
 
 export const Skills = () => {
     return(
-        <section className = {styles.container}>
+        <section className = {styles.container}id = "Skills">
             <h2 className = {styles.title}>
                 My Skills!
             </h2>

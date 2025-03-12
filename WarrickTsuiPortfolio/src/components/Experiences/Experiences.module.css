@@ -13,10 +13,11 @@
 
 .title{
     color: var(--color-text);
-    font-size: 35px;
+    font-size: 45px;
     font-weight: 700;
     letter-spacing: 1.75px;
 }
+
 
 .content{
     display: flex;
@@ -45,6 +46,13 @@
     background-size: 0 100%;
     background-repeat: no-repeat;
     transition: 0.4s;
+
+    h3{
+        font-size: 30px;
+    }
+    p{
+        font-size: 18px;
+    }
 }
 
 .experienceItem:hover{

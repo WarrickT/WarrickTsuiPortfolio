@@ -20,19 +20,19 @@ export const Navbar = () => {
             <ul className = {`${styles.menuItems} ${menuOpen && styles.menuOpen}`}
                 onClick = {() => setMenuOpen(false)}>
                 <li>
-                    <a href = "#about">About Me</a>
+                    <a href = "#Experiences">About Me</a>
                 </li>
 
                 <li>
-                    <a href = "#skills">Skills</a>
+                    <a href = "#Skills">Skills</a>
                 </li>
 
                 <li>
-                    <a href = "#experience">Experience</a>
+                    <a href = "#Projects">Projects</a>
                 </li>
 
                 <li>
-                    <a href = "#projects">Projects</a>
+                    <a href = "#Contact">Contact</a>
                 </li>
             </ul>
         </div>

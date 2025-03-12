@@ -6,7 +6,7 @@ import linkedinIcon from "../../assets/nav/linkedinIcon.png";
 import styles from "./Contact.module.css";
 
 export const Contact = () => {
-    return <footer id = "contact" className = {styles.container}>
+    return <footer id = "Contact" className = {styles.container}>
         <div className = {styles.text}>
             <h2>Contact Me</h2>
 
@@ -15,16 +15,20 @@ export const Contact = () => {
 
         <ul className = {styles.links}>
             <li className = {styles.link}>
-                <img src = {emailIcon} alt = "email icon"/>
-                <a href = "mailto:warricktsui1226@gmail.com">warricktsui1226@gmail.com</a>
+                
+                <a href = "mailto:warricktsui1226@gmail.com">
+                    <img src = {emailIcon} alt = "email icon"/>
+                </a>
             </li>
             <li className = {styles.link}>
-                <img src = {instagramIcon} alt = "instagram icon"/>
-                <a href = "https://www.instagram.com/warrickcwtsui/">Instagram Account</a>
+                <a href = "https://www.instagram.com/warrickcwtsui/">
+                    <img src = {instagramIcon} alt = "instagram icon"/>
+                </a>
             </li>
             <li className = {styles.link}>
+                <a href = "https://www.linkedin.com/in/warrick-tsui-1a83772a3/">
                 <img src = {linkedinIcon} alt = "linkedin icon"/>
-                <a href = "https://www.linkedin.com/in/warrick-tsui-1a83772a3/">LinkedIn</a>
+                </a>
             </li>
         </ul>
     </footer>

@@ -3,7 +3,7 @@ import styles from "./Experiences.module.css";
 
 export const Experiences = () => {
     return(
-        <section className = {styles.container}>
+        <section className = {styles.container} id = "Experiences">
             <h2 className = {styles.title}>Who am I?</h2>
             <div className = {styles.content}>
                 <ul className = {styles.experienceItems}>

@@ -20,6 +20,8 @@
 
 .menu{
     display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
 .menuItems{
@@ -29,7 +31,9 @@
 }
 
 .menuBtn{
-    
+    width: 30px;
+    height: auto;
+    margin-right: 30px;
 }
 
 .menuItems a{
