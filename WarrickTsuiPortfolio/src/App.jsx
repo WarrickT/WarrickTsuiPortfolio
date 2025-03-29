@@ -12,8 +12,8 @@ function App() {
       <Navbar/>
       <About/>
       <Experiences/>
-      <Skills/>
       <Projects/>
+      <Skills/>
       <Contact/>
     </div>
     );

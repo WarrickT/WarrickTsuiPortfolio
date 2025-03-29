@@ -1,29 +1,45 @@
-@import "../../variables.css";
-
-.container{
+.container {
     margin-top: 75px;
+    margin-left: 5%;
+    margin-right: 5%;
     color: var(--color-text);
-    margin-left: 10%;
-    margin-right: 10%;
-}
-
-.title{
+  }
+  
+  .title {
     font-size: 45px;
     font-weight: 700;
     letter-spacing: 1.75px;
-    padding-bottom: 30px;
-}
+    padding-bottom: 75px;
+    text-align: center;
 
-.projects{
-    margin-top: 37px;
+  }
+  
+  .carouselWrapper {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 15px;
-    width: 100%;
-
-    align-items: stretch;
-    justify-content: space-between;
-}
+    gap: 20px;
+  }
+  
+  .carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .arrow {
+    font-size: 2rem;
+    padding: 10px 20px;
+    background: none;
+    border: none;
+    color: var(--color-text);
+    cursor: pointer;
+    user-select: none;
+    transition: transform 0.2s ease;
+  }
+  
+  .arrow:hover {
+    transform: scale(1.2);
+  }
+  

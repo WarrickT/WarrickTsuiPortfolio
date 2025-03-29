@@ -12,43 +12,37 @@ import python from "../../assets/skills/python.png";
 import react from "../../assets/skills/React.png";
 import skills from "../../data/skills.json";
 
-let skills_dictionary = {
-    "Python":python, 
-    "Java":java, 
-    "C":c,
-    "Cpp":cpp,
-    "HTML":html, 
-    "CSS": css,
-    "JS": js,
-    "React": react, 
-    "Github": github
-}
+const skills_dictionary = {
+  Python: python,
+  Java: java,
+  C: c,
+  Cpp: cpp,
+  HTML: html,
+  CSS: css,
+  JS: js,
+  React: react,
+  Github: github,
+};
 
 export const Skills = () => {
-    return(
-        <section className = {styles.container}id = "Skills">
-            <h2 className = {styles.title}>
-                My Skills!
-            </h2>
+  return (
+    <section className={styles.container} id="Skills">
+      <h2 className={styles.title}>My Skills</h2>
 
-            <div>
-                <div className = {styles.skills}>{
-                    skills.map((skill, id) => {
-                        return (<div key ={id} className = {styles.skill}>
-                            <div className = {styles.skillImageContainer}>
-                                <img src = {skills_dictionary[skill.title]} alt = {skill.title}>
-                                </img>
-                            </div>
-                            <p>{skill.title}</p>
-                        </div>)
-                    })
-                    }
-                </div>
+      <div className={styles.skills}>
+        {skills.map((skill, id) => (
+          <div key={id} className={styles.skill}>
+            <div className={styles.skillImageContainer}>
+              <img
+                src={skills_dictionary[skill.title]}
+                alt={skill.title}
+                className={styles.icon}
+              />
             </div>
-
-
-        </section>
-
-    )
-}
-
+            <p className={styles.label}>{skill.title}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+};

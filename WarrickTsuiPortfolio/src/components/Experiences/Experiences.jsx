@@ -1,80 +1,86 @@
 import React from "react";
+import resumePDF from "../../assets/about/Resume.pdf";
 import styles from "./Experiences.module.css";
 
+import codesky from "../../assets/experiences/codeskyImage.png";
+import compIcon from "../../assets/experiences/compIcon.png";
+import tmi from "../../assets/experiences/TMI.png";
+import uoft from "../../assets/experiences/uoft.png";
+import utcca from "../../assets/experiences/UTCCA.png";
+import utesca from "../../assets/experiences/UTESCA.png";
+import utfr from "../../assets/experiences/utfr.png";
+
+const experienceData = [
+  {
+    title: "University of Toronto Student!",
+    description:
+      "Ambitious and creative Computer Engineering student in Area 6 (software). I am passionate about AI and ML, and I'm currently trying to juggle multiple design teams to learn more!",
+    image: uoft,
+  },
+  {
+    title: "ML Developer @ University of Toronto TMI Lab",
+    description:
+      "Researching large language models like XLS-R to build fine-tuned deepfake audio detection models.",
+    image: tmi,
+  },
+  {
+    title: "Software Developer @ UTESCA",
+    description:
+      "Working in a team of 6 to build a stock-trading website for Finliti using the TradingViews API.",
+    image: utesca,
+  },
+  {
+    title: "Backend Software Developer @ UTCCA",
+    description:
+      "Working on WebViz, a web app supporting vehicle testing and data visualization.",
+    image: utcca,
+  },
+  {
+    title: "UTFR Driverless Mapping Team Member",
+    description:
+      "Contributing to WebViz development and mapping for autonomous vehicle testing.",
+    image: utfr,
+  },
+  {
+    title: "Programming Facilitator @ CodeSky",
+    description:
+      "Teaching Scratch and web development (HTML, CSS, JS) to elementary and high school students.",
+    image: codesky,
+  },
+  {
+    title: "Currently Seeking 2025 Summer Internships!",
+    description:
+      "Looking forward to applying and expanding my technical skills in a dynamic environment.",
+    image: compIcon,
+  },
+];
+
 export const Experiences = () => {
-    return(
-        <section className = {styles.container} id = "Experiences">
-            <h2 className = {styles.title}>Who am I?</h2>
-            <div className = {styles.content}>
-                <ul className = {styles.experienceItems}>
-                    <li className = {styles.experienceItem}>
-                        <div>
-                            <h3>
-                                University of Toronto Student!
-                            </h3>
-                            <p>
-                                I am an ambitous and creative student currently pursuing a Bachelor's Degree in Computer Engineering. I am pursuing the Area 6, the software stream of ECE, and I am passionate about artificial intelligence and machine learning.
-                            </p>
-                        </div>
-                    </li>
-                    <li  className = {styles.experienceItem}>
-                        <div>
-                            <h3>
-                                ML Developer @ University of Toronto Trustworthy Machine Intelligence Team
-                            </h3>
-                            <p>
-                                I am currently performing research on large language models like XLS-R to work towards building a fine-tuned model that performs deepfake audio detection.
-                            </p>
-                        </div>
-                    </li>
-                    <li  className = {styles.experienceItem}>
-                        <div>
-                            <h3>
-                                Backend Software Developer @ University of Toronto Creative Computing Association
-                            </h3>
-                            <p>
-                                I am currently working on their WebViz project, a web application that helps with vehicle testing. 
-                            </p>
-                        </div>
-                    </li>
-                    <li  className = {styles.experienceItem}>
-                        <div>
-                            <h3>
-                                UTFR Driverless Mapping Team Member
-                            </h3>
-                            <p>
-                                I am currently working on their WebViz project, a web application that helps with vehicle testing. 
-                            </p>
-                        </div>
-                    </li>
+  return (
+    <section className={styles.container} id="Experiences">
+      <div className={styles.header}>
+        <h2 className={styles.title}>Who am I?</h2>
+        <a
+          href={resumePDF}
+          className={styles.resumeLink}
+          target="_blank"
+          rel="noreferrer"
+        >
+          📄 View Resume
+        </a>
+      </div>
 
-                    <li  className = {styles.experienceItem}>
-                        <div>
-                            <h3>
-                                Programming Classroom Facilitator @ CodeSky
-                            </h3>
-                            <p>
-                                I currently assist with teaching a Scratch class and web development (HTML, CSS, JS) class to elementary and high school students.
-                            </p>
-                    
-                        </div>
-                    </li>
-
-                    <li  className = {styles.experienceItem}>
-                        <div>
-                            <h3>
-                                Currently seeking 2025 Summer Internships!
-                            </h3>
-                            <p>
-                                I look forward to further applying and enhancing my technical skills this upcoming summer.
-                            </p>
-                    
-                        </div>
-                    </li>
-
-                </ul>
+      <div className={styles.experienceList}>
+        {experienceData.map((item, index) => (
+          <div key={index} className={styles.experienceItem}>
+            <img src={item.image} alt={item.title} className={styles.image} />
+            <div>
+              <h3>{item.title}</h3>
+              <p>{item.description}</p>
             </div>
-
-        </section>
-    )
-}
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+};

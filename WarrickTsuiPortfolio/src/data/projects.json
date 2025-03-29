@@ -1,4 +1,21 @@
-[
+    [  {
+        "title": "Sinker - Hack Canada Best Google AI Hack",
+        "imageSrc": "",
+        "description": "For Hack Canada, I had the opportunity to create a cybersecurity application with my amazing teammates Katarina, Emily, and Ethan! The application simulates phishing emails, phone calls, and SMS messages using Gemini AI. ",
+        "github": "https://dorahacks.io/buidl/23048/"
+    },
+    {
+        "title": "Deervolution - Deerhacks 2nd Place Overall",
+        "imageSrc": "",
+        "description": "For Deerhacks, me, Daniyal, Emily, and Ethan built a Pokemon-GO inspired application to boost students' physical activity!  ",
+        "github": "https://devpost.com/software/deervolution"
+    },
+    {
+        "title": "BetterWeb - GenAI Genesis Project",
+        "imageSrc": "",
+        "description": "This Cohere-powered application provides optimizations for individuals with ADHD to browse the web.",
+        "github": "https://devpost.com/software/betterweb"
+    },
     {
         "title": "Tetris FPGA Verilog Project",
         "imageSrc": "",

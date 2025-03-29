@@ -1,56 +1,76 @@
 @import "../../variables.css";
 
-.container{
-    color: var(--color-text);
-    margin-top: 120px;
-    background-color: var(--color-primary);
+.container {
+  color: var(--color-text);
+  background: linear-gradient(180deg, #0fcefe 0%, #AEE7F8 100%);
+  width: 100vw;
+  padding: 60px 10%;
+  margin-top: 120px;
 
-    background: linear-gradient(180deg, #0fcefe 0%, #AEE7F8 100%);
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 100vw;
-    padding: 60px 10%;
-    gap: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
 }
 
-.text h2{
-    font-size: 40px;
-    font-weight: 700;
-    letter-spacing: 4px;
-    text-align: center;
+.text h2 {
+  font-size: 42px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
-.text p{
-    font-size: 25px;
-    font-weight: 400;
-    letter-spacing: 2px;
-    text-align: center;
+.text p {
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  max-width: 500px;
+  margin: 0 auto;
+  line-height: 1.5;
 }
 
-.links{
-    display: flex;
-    flex-direction:  row;
-    align-items: center;
-    list-style: none;
-    gap: 40px;
-
+.links {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
+.iconLink img {
+  width: 60px;
+  height: 60px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
-@media screen and(max-width: 830px){
-    .container{
-        flex-direction: column;
-        gap: 23px;
-    }
-    .text{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .links{
-        flex-direction: column;
-    }
+.iconLink:hover img {
+  transform: scale(1.15);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* ✅ Responsive Layout */
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 50px 5%;
+  }
+
+  .links {
+    gap: 25px;
+  }
+
+  .iconLink img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .text h2 {
+    font-size: 32px;
+  }
+
+  .text p {
+    font-size: 18px;
+  }
 }

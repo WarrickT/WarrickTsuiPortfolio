@@ -26,6 +26,7 @@
     font-family: var(--font-roboto);
     display: inline-block; /* Keep title inline */
     text-align: center; /* Ensure text is centered */
+    
 }
 
 .letter {
