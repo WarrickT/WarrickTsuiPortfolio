@@ -13,11 +13,30 @@ export const Experiences = () => {
                                 University of Toronto Student!
                             </h3>
                             <p>
-                                I am an ambitous and creative student currently pursuing a Bachelor's Degree in Computer Engineering. I am planning to pursue Areas 5 and 6 of the ECE Stream. 
+                                I am an ambitous and creative student currently pursuing a Bachelor's Degree in Computer Engineering. I am pursuing the Area 6, the software stream of ECE, and I am passionate about artificial intelligence and machine learning.
                             </p>
                         </div>
                     </li>
-
+                    <li  className = {styles.experienceItem}>
+                        <div>
+                            <h3>
+                                ML Developer @ University of Toronto Trustworthy Machine Intelligence Team
+                            </h3>
+                            <p>
+                                I am currently performing research on large language models like XLS-R to work towards building a fine-tuned model that performs deepfake audio detection.
+                            </p>
+                        </div>
+                    </li>
+                    <li  className = {styles.experienceItem}>
+                        <div>
+                            <h3>
+                                Backend Software Developer @ University of Toronto Creative Computing Association
+                            </h3>
+                            <p>
+                                I am currently working on their WebViz project, a web application that helps with vehicle testing. 
+                            </p>
+                        </div>
+                    </li>
                     <li  className = {styles.experienceItem}>
                         <div>
                             <h3>

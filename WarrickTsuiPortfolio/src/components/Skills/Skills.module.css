@@ -3,7 +3,6 @@
 .container{
     color: var(--color-text);
 
-    background: linear-gradient(90deg, #1fd655 0%, #83f28f 100%);
     margin-top: 79px;
     margin-left: 10%;
     margin-right: 10%;

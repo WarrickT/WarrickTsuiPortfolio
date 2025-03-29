@@ -18,12 +18,6 @@
         "github": "https://github.com/WarrickT/Connor-Sharani-Warrick-Gas-Price-Checker" 
     }, 
     {
-        "title": "EchoMix - ML Spotify API Project (Upcoming)",
-        "imageSrc": "",
-        "description": "This project will gather the user's playlists and generate similar ones using a cosine similarity and K-Nearest Neighbour algorithm.",
-        "github": "https://github.com/WarrickT/EchoMix"
-    },
-    {
         "title": "Reversi Project - C",
         "imageSrc": "",
         "description": "Implementation of Reversi using minimaxing algorithm",

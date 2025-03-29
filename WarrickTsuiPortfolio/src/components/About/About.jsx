@@ -1,20 +1,28 @@
 import React from "react";
-import graduationPic from "../../assets/about/Graduation.png";
 import styles from "./About.module.css";
-
 
 export const About = () => {
     return (
-        <section className = {styles.container} id = "About">
-            <div className = {styles.content}>
-                <h1 className = {styles.title}>Hi, Warrick here!</h1>
+        <section className={styles.container} id="About">
+            <div className={styles.content}>
+                <h1 className={styles.title}>
+                    {"Hi, Warrick here!".split("").map((char, index) => (
+                        char === " " ? (
+                            <span key={index} className={styles.space}></span>
+                        ) : (
+                            <span
+                                key={index}
+                                className={styles.letter}
+                                style={{ '--letter-index': index }} // Pass index as custom property
+                            >
+                                {char}
+                            </span>
+                        )
+                    ))}
+                </h1>
             </div>
-            <img className = {styles.gradImg} src = {graduationPic} alt = "Graduation Image"/>
-
-            <div className = {styles.topBlur}/>
-            <div className = {styles.bottomBlur}/>
-
-        </section>)
-}
-
-
+            <div className={styles.topBlur} />
+            <div className={styles.bottomBlur} />
+        </section>
+    );
+};

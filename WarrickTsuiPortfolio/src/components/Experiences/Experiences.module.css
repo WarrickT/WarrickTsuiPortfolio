@@ -2,7 +2,6 @@
 
 .container{
     position: relative;
-    background: linear-gradient(90deg, #3373C4 0%, #73B9EE 100%);
     border-radius: 15px;
     padding: 73px;
     margin-top: 129px;
@@ -11,12 +10,6 @@
     margin-right: 10%;
 }
 
-.title{
-    color: var(--color-text);
-    font-size: 45px;
-    font-weight: 700;
-    letter-spacing: 1.75px;
-}
 
 
 .content{
@@ -57,4 +50,37 @@
 
 .experienceItem:hover{
     background-size: 100% 100%;
+}
+
+.title {
+    color: var(--color-text);
+    font-size: 50px;
+    font-weight: 900;
+    margin-bottom: 33px;
+    font-family: var(--font-roboto);
+    text-align: center; /* Ensure text is centered */
+}
+
+.letter {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: typing 1s forwards;
+    animation-delay: calc(0.1s * var(--letter-index)); /* Delay each letter */
+}
+
+.space {
+    display: inline-block;
+    width: 20px; /* Adjust space width if necessary */
+}
+
+@keyframes typing {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
