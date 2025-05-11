@@ -25,18 +25,21 @@
   font-family: var(--font-roboto);
 }
 
-.resumeLink {
+.linkButton {
   background: var(--color-accent, #2b72e3);
   color: white;
-  font-weight: 600;
-  padding: 10px 20px;
+  font-weight: 400;
+  padding: 12px 24px;
   border-radius: 999px;
   text-decoration: none;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  white-space: nowrap;
   transition: background 0.3s ease;
-  font-size: 16px;
 }
 
-.resumeLink:hover {
+.linkButton:hover {
   background: #1d5ecb;
 }
 
@@ -75,13 +78,27 @@
 }
 
 .experienceItem h3 {
-  font-size: 26px;
+  font-size: 35px;
   font-weight: 700;
   margin-bottom: 6px;
 }
 
 .experienceItem p {
-  font-size: 18px;
+  font-size: 21px;
   color: var(--color-text);
   max-width: 900px;
+}
+
+.textAndButton {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  flex: 1;
+}
+
+.textContent {
+  flex: 1;
+  min-width: 250px;
 }
