@@ -5,7 +5,7 @@ const isProd = process.env.NODE_ENV === "production";
 const nextConfig: NextConfig = {
   output: "export",                 // required for GitHub Pages (static hosting)
   images: { unoptimized: true },    // Pages can’t do Next/Image optimization
-  basePath: isProd ? "/WarrickTsuiPortfolio" : "",
+  // basePath: isProd ? "/WarrickTsuiPortfolio" : "",
   // assetPrefix: isProd ? "/WarrickTsuiPortfolio/" : "",
   // optional but nice for static hosting:
   // trailingSlash: true,
