@@ -38,7 +38,7 @@ and application process of 1000+ competition participants</p>
                         <div>
                             <p>- Helped develop an AI teaching assistant used by 1000+ students and 7+ engineering courses through building a RAG Pipeline in Python/FastAPI                            </p>
                             <br/>
-                            <p>- Led application's full migration to Ubuntu production servers, configuring Shibboleth and Apache2 reverse proxy for secure Single Sign-On (SSO) with university infrastructure</p>
+                            <p>- Led application full migration to Ubuntu production servers, configuring Shibboleth and Apache2 reverse proxy for secure Single Sign-On (SSO) with university infrastructure</p>
                             <br/>
                             <p>- Designed and implemented CI/CD pipeline for deploy and preview environments through creaeting structure Github Actions automation workflows</p>
                         </div>
