@@ -2,7 +2,7 @@ import InterestCard from "./InterestCard"
 const Interests = () => {
   return (
     <div className="pt-16 pb-16">
-        <h1 data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-delay="0" className="text-center text-4xl md:text-6xl xl:text-5xl font-bold text-cyan-400">
+        {/* <h1 data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-delay="0" className="text-center text-4xl md:text-6xl xl:text-5xl font-bold text-cyan-400">
             About Me! <br/>
         </h1>
 
@@ -24,7 +24,7 @@ const Interests = () => {
                 alt="About Me"
             className="pl-4 pr-4 w-[250px] md:w-[350px] xl:w-[400px] rounded-2xl shadow-lg"/>
 
-        </div>
+        </div> */}
 
 
 

@@ -2,11 +2,30 @@ import ProjectsCard from './ProjectsCard';
 
 const Projects = () => {
   return (
-    <div className="pt-16 pb-16">
+    <div className="relative h-auto flex items-center justify-center text-white flex-col mt-[10vh]">
+    {/* </div>
+    <div className = "pt-20 pb-16"> */}
+        {/*Terminal Container */}
+          <h1 className="text-center text-4xl text-cyan-400 mb-[3vh] ">
+        Projects Portfolio
+  </h1>
+    {/* <div className="pt-16 pb-16">
         <h1 className="text-center text-2xl md:text-4xl xl:text-5xl font-bold text-white">
             <span className="text-cyan-300">Projects</span> Portfolio
-        </h1>
-        <div className="w-[70%] mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 mt-16 xl:gap-6 gap-10">
+        </h1> */}
+
+
+        <div className="relative z-10 bg-[#0d0d0d] border-2 border-cyan-400 rounded-lg shadow-2xl 
+    w-11/12 h-auto min-h-[70vh]  flex flex-col py-5 px-4 font-mono">
+
+  {/* Top bar */}
+  <div className="flex items-center space-x-2 mb-6">
+    <span className="w-4 h-4 bg-red-500 rounded-full"></span>
+    <span className="w-4 h-4 bg-yellow-500 rounded-full"></span>
+    <span className="w-4 h-4 bg-green-500 rounded-full"></span>
+    <span className="ml-4 text-xl text-cyan-400">warrick@uoft: <span className="text-yellow-300">/projects</span>$</span>
+  </div>
+        <div className="w-[90%] mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 mt-16 xl:gap-6 gap-10">
             <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-delay="0">
               <ProjectsCard image='/images/Projects/PotholeCover.png' title='Pothole Detection' 
               shortDescription='Deep Learning model for detecting road potholes using SSD Architecture, from scratch on PyTorch.'
@@ -71,7 +90,9 @@ const Projects = () => {
           />
         </div>
 
-        </div>
+        </div>  
+  </div>
+
     </div>
   )
 }

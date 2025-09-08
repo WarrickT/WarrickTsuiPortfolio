@@ -1,7 +1,6 @@
 // Overall wrapper of project 
 import type { Metadata } from "next";
-import { JetBrains_Mono } from "next/font/google";
-
+import { Courier_Prime } from "next/font/google";
 import ScrollToTop from "../components/Helper/ScrollToTop";
 import Footer from "../components/Home/Footer/Footer";
 import ResponsiveNav from "../components/Home/Navbar/ResponsiveNav";
@@ -12,8 +11,14 @@ import "./globals.css";
 //   subsets: ['latin'],
 // }
 // )
-const font= JetBrains_Mono({
-  weight: ['100', '200', '300', '400', '500', '600', '700', '800'],
+// const font= JetBrains_Mono({
+//   weight: ['100', '200', '300', '400', '500', '600', '700', '800'],
+//   subsets: ['latin'],
+// }
+// )
+const font= Courier_Prime({
+  // weight: ['100', '200', '300', '400', '500', '600', '700', '800'],
+  weight: ['400', '700'],
   subsets: ['latin'],
 }
 )
