@@ -23,10 +23,10 @@ const Hero = () => {
   <div className=" text-gray-300 space-y-8">
     {/* greetings.txt */}
     <div>
-      <h1 className="text-white text-xl">
+      <h1 data-aos="fade-right" data-aos-delay="0" className=" text-white text-xl">
         <span className="text-cyan-400">$ </span> <span className="text-yellow-200">cat </span>greetings.txt
       </h1>
-      <p className="mt-2 text-lg md:text-lg">
+      <p data-aos="fade-right" data-aos-delay="100"  className="mt-2 text-lg md:text-lg">
         Hello! This is my Portfolio Website. Here I will outline all my{" "}
         <span className="text-cyan-300">interests, work experiences, and projects.</span>
         <br /><br />
@@ -38,11 +38,11 @@ const Hero = () => {
     </div>
 
     {/* about.txt */}
-      <h1 className="text-white text-xl">
+      <h1 data-aos="fade-right" data-aos-delay="200" className="text-white text-xl">
         <span className="text-cyan-400">$ </span> <span className="text-yellow-200">cat </span>about.txt
       </h1>
 
-    <div className="mt-4 flex flex-col md:flex-row items-start gap-6">
+    <div data-aos="fade-right" data-aos-delay="300" className="mt-4 flex flex-col md:flex-row items-start gap-6">
       <div className="flex-1 text-lg md:text-lg">
             I am a passionate and capable student studying Computer Engineering at University of Toronto. I am interested in all things <span className="text-cyan-400">machine learning </span>
              and <span className="text-cyan-400">software development (fullstack, frontend, backend)</span>. I enjoy building projects and working with teams that make a difference in our world. 

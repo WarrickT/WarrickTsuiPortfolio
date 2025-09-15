@@ -52,6 +52,18 @@ const Nav = ({openNav}: Props) => {
                     //         {link.label}
                     //     </p>
                     // </Link>
+
+            const linkClass =
+            "px-3 py-2 rounded-md border-2 md:border-3 border-red-400 text-base hover:text-cyan-300 text-white font-medium transition-all duration-200";
+
+            // Special case for ML Blog
+            if (link.label === "ML Blog") {
+            return (
+                <Link key={link.id} href="https://github.com/WarrickT/Machine_Learning_Notebook" className={linkClass}>
+                {link.label}
+                </Link>
+            );
+            }
             return isSection ? (
                 <a
                     key={link.id}

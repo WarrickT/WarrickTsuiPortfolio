@@ -21,7 +21,7 @@ export const NavLinks = [
     }, 
     {
         id: 5, 
-        url: "#blog/ml", 
+        url: "https://github.com/WarrickT/Machine_Learning_Notebook", 
         label: "ML Blog",
     }, 
     //     {
